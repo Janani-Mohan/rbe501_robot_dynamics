@@ -1,0 +1,37 @@
+Problem#1
+Consider the ABB IRB1400 articulated arm in its home position with the dimensions shown below in
+millimeters.
+Important: Consider the ABB robot with 3-DOF exactly the same as the Elbow Manipulator! In other
+words, assume that the robot has three joints ONLY with the configuration/geometry shown below. So,
+disregard any additional joints you see at the wrist.
+a) Represent the workspace of the robot both mathematically and visually. For visualization, you
+can use any software that you know and feel comfortable with. It could be CAD software,
+MATLAB, etc. Note: Representing the workspace mathematically means that you need to come
+up with the equations of boundary of the workspace from the Side view (2D). For joint rotation
+limitations, you can do a search online and/or make assumptions.
+b) Attach a spherical wrist to the end-effector of the robot while in its home position. Then, write
+the complete inverse kinematics solution (Position and Orientation) for this 6-DOF robot.
+Remember, spherical wrist theoretically acts as a point and therefore has no dimensions. Note:
+Adding a spherical joint to the robot’s end-effector will add 3 DOF which makes the robot to
+have total of 6-DOF (Elbow manipulator + Spherical wrist). The homework is designed to be
+similar to the example solved in Chapter 3 of the book, so it should be easy for you to solve for
+the inverse kinematics of the robot.
+c) Using the solution for Part b, calculate the six joint angles of the robot for the following
+given/desired homogenous transformation matrix of the robot:
+𝐻 =
+1 0
+0 1
+0 500
+0 100
+0 0
+0 0
+1 1500
+0 1
+d) Derive the 6×𝑛 Jacobian matrix of the robot without the spherical wrist. (The geometric
+Jacobian)
+e) Calculate the joint velocities of the robot leading to the end-effector velocity of
+x = 5 5 10 0 0 0 !. Consider the robot in the position given in Part c (last column of
+𝐻) and without the spherical wrist.
+f) With mathematical proof, derive and discuss singularities (singular configurations) of the robot
+without spherical wrist. Show your work and illustrate examples of singular configurations for
+clarity.

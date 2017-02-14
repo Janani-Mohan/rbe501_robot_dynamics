@@ -1,0 +1,56 @@
+Problem#1 (1-Link Arm Robot)
+For the 1-link arm robot shown in the figure below, develop a trajectory where 𝑞(𝑡 = 0) = 20!,
+𝑞(𝑡 = 1) = 70!, 𝑞(𝑡 = 2) = 100!, and 𝑞(𝑡 = 3) = 120! with zero velocities and accelerations at 0, 1,
+2, and 3 seconds. Choose appropriate polynomials and write a MATLAB code which plots the timeposition,
+time-velocity, and time-acceleration trajectory graphs in the joint space from 𝑡 = 0 to 𝑡 = 3
+seconds in the joint space.
+
+Problem#2 (Two-Link Arm Robot)
+For the two-link arm robot shown in the figure below with 𝑙! = 𝑙! = 300 𝑚𝑚 and 𝑚! = 𝑚! = 0.05 𝐾𝑔,
+a) Develop a trajectory where the robot starts at 𝑡 = 0 with the initial position of
+𝑥! = 300, 450 𝑚𝑚 and zero velocity and ends at 𝑡 = 5 𝑠𝑒𝑐 with the final position of
+𝑥! = −300, 450 𝑚𝑚 and zero velocity. Choose appropriate polynomials and write a MATLAB
+code which plots the time-position, time-velocity, and time-acceleration trajectory graphs for both
+joints from 𝑡 = 0 to 𝑡 = 5 seconds. Finally, plot the resultant end-effector path/trajectory i.e.
+track the position of the end-effector (task space) within the motion.
+b) Write out the full computed torque controller to execute this motion. The detailed expanded
+matrix form is desired. Draw the corresponding control block diagram.
+
+Problem#3 (Mobile Wheeled Robot)
+In the following figures, a Neobotix mobile wheeled robot is shown. The robot’s mobile base has two
+independently driven wheels with a wheelbase of 𝐚, and with angular velocities ω! and ω! for the right
+and left wheels, respectively. The direction of the angular velocities is such that if ω! and ω! are both the
+same with positive values, the robot will then drive in the forward x! direction. Treat the castor wheel as
+a single omniwheel centered with distance 𝐜 to the axis passing through the driven wheels’ centers as
+shown in the figure. All wheels are of radius r.
+a) Constraint Equations: Determine the constraint equations with respect to the robot-fixed frame,
+FR, for each of the three wheels on the mobile base (6 equations total).
+b) Constraint Matrix: Generate the constraint matrices J & C. Then compile the constraints into a
+single matrix constraint equation. Reduce the equation to eliminate any redundant constraints.
+c) Mobile Kinematics: Determine the velocity kinematics of the mobile robot base (defined by the
+robot-fixed frame, FR, on the robot between the wheels) with respect to the world coordinate
+frame FW in terms of wheel angular velocities as defined in the figure. Be sure to define any
+assumptions or unlabeled information.
+For the following questions, as shown in the last figure in the last page, assume that a 3-DOF arm
+manipulator (arm robot with three joints) is attached on top of the base of the mobile robot right above the
+omniwheel. Assume that, from your previous knowledge of D-H parameters, you have already calculated
+the 4x4 homogenous transformation matrix from the mobile robot fixed frame, FR, to the arm tip frame,
+FT, of the elbow manipulator, that is, you already have the transformation of the tip frame FT with respect
+to the mobile robot fixed frame FR i.e. H = T!
+!. Also, assume that you have already calculated the full 6x3
+velocity Jacobian from T!
+!.
+d) Combined Position Kinematics: For the complete combined system, solve for the position
+forward kinematics that symbolically represent the tip frame FT with respect to the world
+coordinate frame FW. Assume that x! and y! are the x and y coordiantes of the robot, respectively.
+Define any assumptions or unlabeled information.
+e) Combined Velocity Kinematics: Solve for the full velocity kinematics that represent the 6-DOF
+velocity (linear and angular velocities) of the robot tip frame FT with respect to the world
+coordinate FW as a function of all of the drive wheel and joint angular velocities (5 joint
+variables).
+f) Combined Jacobian: Write out the corresponding Jacobian and matrix- vector equation that gives
+the linear and angular velocities of the tip as a function of the two wheel angular velocities and
+the three joint angular velocities.
+g) Force Propagation: Symbolically, represent the required torque at each wheel to keep the position
+of the mobile base stable as it is pushing against the wall with a force/moment vector equal to
+𝐅 = [f! f! f! n! n! n!]! (assuming no slip).

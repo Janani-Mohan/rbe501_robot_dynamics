@@ -1,0 +1,19 @@
+Problem#1
+Derive the Euler-Lagrange equations of motion i.e.dynamical model for the three-link RRR elbow manipulator shown in the below figure.
+Consider the links to be massless, that is, consider point masses at the end of each link similar to what we had in the lecture for the two-link arm.
+For this problem, you need to explore the use of symbolic software, such as Maple, Mathematica, MATLAB, or any other software that
+you feel comfortable with.
+
+Problem#2
+For the 2-link arm shown below, let 𝑙1,𝑙2 be the distances of the centers of mass of the two links from the respective joint axes and
+𝑎1,𝑎2 be the length of the two links. Also let 𝑚1 , 𝑚2 be the masses of the two links. Finally, let 𝐼1,𝐼2 be the moments of 
+inertia relative to the centers of mass of the two links, respectively. Derive the dynamical model of the robot using Lagrange’s equation
+and finally write a MATLAB code that calculates the joint torques for any given configuration/state of the robot.
+Consider 𝑙𝑖=𝑎𝑖2 for simplicity. It is very important that you show your work with all details!
+
+In Problem 2, we do not have point masses but the masses of the links are taken into account with the center of masses shown in the 
+figure below. Therefore, you need to take into consideration both the translational and rotational kinetic energies.
+The latter includes the mass moment of inertia of the link around its center of mass (𝐼𝑖). 
+Therefore, 𝐾𝑖=𝐾𝑖,𝑡𝑟𝑎𝑛𝑠+𝐾𝑖,𝑟𝑜𝑡=12𝑚𝑖𝑣𝑖2+12𝐼𝑖𝑞̇𝑖2. While this topic is discussed in your reading assignment,
+Chapter 6, another useful example of a similar robot is also attached as reference.
+

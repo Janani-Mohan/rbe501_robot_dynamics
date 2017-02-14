@@ -1,10 +1,18 @@
 Problem#1
-In this assignment, you will solve for the forward kinematics of the Fanuc LR Mate 200ic 6-DOF robotic manipulator. Information of the robot including all dimensions is shown in the attached file. For more details on how the joints move, please do online search, watch videos, and/or ask questions.
+In this assignment, you will solve for the forward kinematics of the Fanuc LR Mate 200ic 6-DOF robotic manipulator. 
+Information of the robot including all dimensions is shown in the attached file. 
+For more details on how the joints move, please do online search, watch videos, and/or ask questions.
 Please follow the below questions step by step and show your work. If you think some parameters are missing, you can make assumptions.
-1. Draw the robot in the home position (the Side view of the robot shown in the second page of the attached file) and then assign the coordinate frames for each joint using the D-H convention.
+
+1. Draw the robot in the home position (the Side view of the robot shown in the second page of the attached file) and 
+then assign the coordinate frames for each joint using the D-H convention.
 2. Determine the D-H parameters for the robot and fill in the table.
 3. Write out each of the frame transformations from one link to the next one as homogeneous transformation matrices (i.e. 𝐴𝑖 OR 𝑇𝑖𝑖−1)
 4. Write out the composite transformation as a series of homogeneous transformations.
-5. Solve for the composite transformation representing the forward kinematics (𝐻=𝑇𝑛0). You may use computer software such as Matlab or Maple for this part. In this case, include a copy of your solution showing your work.
-6. Determine the forward kinematics of the end effector if the joint configuration of the robot is given as follows: [𝜃1,𝜃2,𝜃3,𝜃4,𝜃5,𝜃6]=[0,75,30,135,−45,60] in degrees.
-7. Develop a Matlab function with a model of the arm that will draw each link (solid line) and joint (solid point) of the robot in a 3D plot based on an input vector of the joint configuration. Then, illustrate the robot applying the joint configuration given in question 6. Remember, if you apply [𝜃1,𝜃2,𝜃3,𝜃4,𝜃5,𝜃6]=[0,0,0,0,0,0] the robot should go to the defined home position in question 1.
+5. Solve for the composite transformation representing the forward kinematics (𝐻=𝑇𝑛0). 
+You may use computer software such as Matlab or Maple for this part. In this case, include a copy of your solution showing your work.
+6. Determine the forward kinematics of the end effector if the joint configuration of the robot is given as follows:
+[𝜃1,𝜃2,𝜃3,𝜃4,𝜃5,𝜃6]=[0,75,30,135,−45,60] in degrees.
+7. Develop a Matlab function with a model of the arm that will draw each link (solid line) and joint (solid point) of the robot 
+in a 3D plot based on an input vector of the joint configuration. Then, illustrate the robot applying the joint configuration given in 
+question 6. Remember, if you apply [𝜃1,𝜃2,𝜃3,𝜃4,𝜃5,𝜃6]=[0,0,0,0,0,0] the robot should go to the defined home position in question 1.
